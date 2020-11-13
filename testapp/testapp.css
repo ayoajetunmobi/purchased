@@ -1,0 +1,361 @@
+body {
+    background-color: rgb(221, 215, 215);
+}
+
+.myapp {
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+}
+
+img {
+    max-width: 300px;
+}
+
+.image2 {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    max-width: 200px;
+    z-index: 1;
+}
+
+.image1 {
+    position: absolute;
+    top: 50vh;
+    width: 200px;
+    left: 79%;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+}
+
+header ul li {
+    display: inline;
+    text-decoration: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+}
+
+.logoimg {
+    margin: 90px 34%;
+    max-width: 300px;
+}
+
+.page {
+    position: absolute;
+    background: #faf3ec;
+    left: 15%;
+    width: 70%;
+    height: 70vh;
+    border: 1px groove gray;
+    margin: 60px 30px;
+    transition: 14s ease-in;
+    display: none;
+}
+
+.welcome button {
+    position: relative;
+    width: 15%;
+    height: 30px;
+    left: 43%;
+    background-color: #464624;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.start img {
+    width: 150x;
+    height: 150px;
+}
+
+.home {
+    -webkit-box-shadow: 0 27px 27px rgba(25, 25, 25, 0.25);
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    left: 36%;
+    overflow: hidden;
+    background-color: #fff0e1;
+}
+
+.homeimg1 {
+    position: absolute;
+    top: -2%;
+    left: -15%;
+    width: 150x;
+    height: 150px;
+}
+
+.homeimg2 {
+    position: absolute;
+    top: 74%;
+    left: 76%;
+    width: 150x;
+    height: 150px;
+}
+
+.home .logo {
+    width: 150x;
+    height: 150px;
+    position: absolute;
+    top: 7%;
+    left: 15%;
+}
+
+.start button {
+    position: relative;
+    top: 37%;
+    width: 35%;
+    height: 30px;
+    left: 32%;
+    background-color: #464624;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.start h4 {
+    position: relative;
+    top: 38%;
+    left: 33%;
+}
+
+.manimg {
+    position: relative;
+    top: 35%;
+    left: 9%;
+}
+
+.next img {
+    width: 120x;
+    height: 140px;
+}
+
+.next form {
+    position: relative;
+    top: 45%;
+    text-align: center;
+}
+
+.next input {
+    margin-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #464624;
+    color: white;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+.statuses .logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 30%;
+    top: 2%;
+}
+
+.statuses .manimg {
+    position: relative;
+    top: 23%;
+    left: 0;
+    width: 60px;
+    height: 100px;
+}
+
+#gender {
+    position: relative;
+    top: 20%;
+    text-align: center;
+    width: 100%;
+}
+
+#gender .gender {
+    position: relative;
+    width: 40px;
+    display: inline;
+    cursor: pointer;
+}
+
+#status {
+    position: relative;
+    top: 15%;
+    text-align: center;
+    width: 100%;
+}
+
+#status .statuss {
+    position: relative;
+    width: 40px;
+    display: inline;
+    cursor: pointer;
+}
+
+.statuses form {
+    position: absolute;
+    top: 65%;
+    text-align: center;
+}
+
+.statuses input {
+    margin-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #464624;
+    color: white;
+    font-size: 12px;
+    border-radius: 30px;
+}
+
+.active {
+    border: 2px solid grey;
+}
+
+.backimg {
+    position: absolute;
+    -webkit-box-shadow: 0 27px 27px rgba(25, 25, 25, 0.25);
+    height: 100%;
+    width: 30%;
+    left: 36%;
+    overflow: hidden;
+}
+
+.backimg img {
+    width: 100px;
+}
+
+.description .form {
+    position: absolute;
+}
+
+.form h5 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-bottom: 2px solid black;
+}
+
+.form h6 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.form {
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: 39%;
+}
+
+.form input {
+    text-align: center;
+    color: white;
+    background-color: #464624;
+}
+
+.form input:last-child {
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.designs {
+    position: absolute;
+    margin: 10px auto;
+    height: 50%;
+    left: 42.6%;
+}
+
+.designs img {
+    width: 150px;
+}
+
+.designs .rows {
+    position: absolute;
+    top: 123.9%;
+    left: 28%;
+    width: 70px;
+}
+
+.designs .bucket {
+    position: absolute;
+    top: 105.8%;
+    height: 50px;
+    width: 20px;
+    left: 44%;
+}
+
+.designs p {
+    position: absolute;
+    top: 70%;
+    left: 19.8%;
+    z-index: 1;
+}
+
+.plainwhite {
+    position: absolute;
+    top: 70%;
+    left: 1%;
+}
+
+.designs h6 {
+    position: absolute;
+    top: 146%;
+    left: 10.5%;
+    color: #464624;
+}
+
+.nomatch .logo {
+    position: absolute;
+    top: 2%;
+}
+
+.nomatch .plainwhite {
+    position: absolute;
+    width: 150px;
+    top: 37%;
+    left: 25%;
+}
+
+.nomatch h3 {
+    position: absolute;
+    font-size: 12px;
+    top: 44%;
+    z-index: 1;
+    width: 45%;
+    left: 31%;
+}
+
+.nomatch .man {
+    position: absolute;
+    width: 60px;
+    top: 75%;
+    left: 4%;
+}
+
+.amatch p {
+    position: absolute;
+    font-size: 12px;
+    top: 75%;
+}
+
+#previous {
+    position: absolute;
+    top: 84%;
+    left: 20%;
+    z-index: 3;
+    border-radius: 10px;
+    background-color: #464624;
+    color: white;
+    display: none;
+}
+
+.visible {
+    display: block;
+}

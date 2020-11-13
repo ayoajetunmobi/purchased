@@ -1,0 +1,15 @@
+function getslide(event) {
+    for (let i = 0; i < slider.length; i++) {
+        let slide = [...slider[i].getElementsByClassName("slide")];
+        if (slidelen > 0) {
+            for (let j = 0; j < slide.length; j++) {
+                let elem = event.target.getAttribute("data");
+                if (slide[j].getAttribute("data") == elem) {
+                    console.log(slide[j].style.left.display = slideWidth * j + "px");
+                }
+            }
+
+        }
+    }
+
+}

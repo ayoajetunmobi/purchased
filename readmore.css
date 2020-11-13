@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+    font-size: x-large;
+}
+
+#btt {
+    position: absolute;
+    right: 50%;
+    background-color: lightcoral;
+}
+
+#btt:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+
+#open {
+    display: none;
+}

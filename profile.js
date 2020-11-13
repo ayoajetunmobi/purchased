@@ -29,9 +29,9 @@ function tabclick(event) {
     }
 
 }
-profile.addEventListener('click', propic);
+profile.addEventListener('click', propicture);
 
-function propic(event) {
+function propicture(event) {
     var elem = event.target,
         elemID = elem.getAttribute('id'),
         bigpropic = document.getElementById('bigpropic'),
@@ -59,7 +59,8 @@ function propic(event) {
 }
 view.addEventListener('click', viewmore);
 
-function viewmore() {
+function viewmore(event) {
+    event.preventDefault();
     var viewmore = document.getElementById('viewpost'),
         links = document.getElementById("links");
 
@@ -69,7 +70,8 @@ function viewmore() {
 
 close.addEventListener('click', disapp);
 
-function disapp() {
+function disapp(event) {
+    event.preventDefault();
     var viewmore = document.getElementById('viewpost'),
         links = document.getElementById("links");
 

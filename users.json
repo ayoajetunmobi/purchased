@@ -1,0 +1,61 @@
+{
+    "user": [
+
+        {
+            "profile": {
+                "id": 0,
+                "username": "user1",
+                "propic": "image-1.jpeg",
+                "description": "i am a strong man with a strong desire to win,i would never settle for less,i must win in every situation Godbles",
+                "favquote": "stay true and real to your clients",
+                "tab1": "AYO",
+                "tab2": "AJETUNMOBI",
+                "tab3": "18/01/1997",
+                "tab4": "OJO LAGOS STATE NIGERIA",
+                "tab5": "STUDENT",
+                "tab6": "09093033976",
+                "tab7": "ayoajetunmobi78@gmail.com",
+                "tab8": "ayo ajetunmobi,fly.tech.graohics",
+                "sex": "male"
+            }
+        },
+        {
+            "profile": {
+                "id": 1,
+                "username": "user2_da x killerman",
+                "propic": "image-4.jpeg",
+                "description": "i am a strong man with a strong desire to win",
+                "favquote": "stay true",
+                "tab1": "TAYO",
+                "tab2": "AJETUNMOBI",
+                "tab3": "6/06/1996",
+                "tab4": "OJO LAGOS STATE NIGERIA",
+                "tab5": "STUDENT",
+                "tab6": "09093033976",
+                "tab7": "tayoajetunmobi78@gmail.com",
+                "tab8": "tayo ajetunmobi,fly.tech.graohics",
+                "sex": "male"
+            }
+        },
+
+        {
+            "profile": {
+                "id": 2,
+                "username": "user3",
+                "propic": "image-3.jpeg",
+                "description": "i am a strong man with a strong desire to win",
+                "favquote": "stay true",
+                "tab1": "FUNKE",
+                "tab2": "AJETUNMOBI",
+                "tab3": "6/07/1993",
+                "tab4": "OJO LAGOS STATE NIGERIA",
+                "tab5": "IT woman",
+                "tab6": "09093033976",
+                "tab7": "sarahajetunmobi78@gmail.com",
+                "tab8": "ajetunmobi,fly.tech.graohics",
+                "sex": "female"
+            }
+        }
+
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "posts": [{
+            "username": "user2_da x killer man",
+            "id": 1,
+            "propic": "image-4.jpeg",
+            "data": 5,
+            "price": "2,000",
+            "description": " corola x8",
+            "images": ["image-2.jpeg"],
+            "ammount": 0
+        },
+        {
+            "username": "user1",
+            "id": 0,
+            "propic": "image-1.jpeg",
+            "data": 1,
+            "price": "1,2000,000",
+            "description": "best clooting brand new",
+            "images": ["image-1.jpeg", "image-5.jpeg", "image-3.jpeg"],
+            "ammount": 0
+        },
+        {
+            "username": "user2_da x killer man",
+            "id": 1,
+            "propic": "image-4.jpeg",
+            "data": 3,
+            "price": "17,000",
+            "description": "iphone",
+            "images": ["toy.jpg", "image-1.jpeg", "image-3.jpeg", "image-5.jpeg"],
+            "ammount": 0
+        },
+        {
+            "username": "user3",
+            "id": 2,
+            "propic": "image-3.jpeg",
+            "data": 6,
+            "price": "7,000",
+            "description": " hyunda",
+            "images": ["toy.jpg", "summer.jpg", "image-1.jpeg"],
+            "ammount": 0
+        },
+        {
+            "username": "user2_da x killer man",
+            "id": 1,
+            "propic": "image-4.jpeg",
+            "data": 4,
+            "price": "10,000",
+            "description": "iphone2",
+            "images": ["image-2.jpeg", "image-4.jpeg", "summer.jpg"],
+            "ammount": 0
+        },
+
+        {
+            "username": "user1",
+            "id": 0,
+            "propic": "image-1.jpeg",
+            "data": 2,
+            "price": "17,000",
+            "description": "iphone seven with all accesories phone toys gadjet bags and many more",
+            "images": ["image-3.jpeg", "image-1.jpeg", "image-5.jpeg", "image-3.jpeg"],
+            "ammount": 0
+        },
+        {
+            "username": "user3",
+            "id": 2,
+            "propic": "image-3.jpeg",
+            "data": 7,
+            "price": "1,000",
+            "description": "contact for best wears",
+            "images": [
+                "summer.jpg"
+            ],
+            "ammount": 0
+        }
+
+    ]
+
+}

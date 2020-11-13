@@ -2,299 +2,221 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="purchased.css">
-    <link rel="stylesheet" href="profile.css">
-    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="purchased.css" />
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="login.css" />
+
     <title>purchased</title>
 </head>
 
 <body>
     <div class="mysite">
+        <!--head bar-->
         <header>
             <div class="logo">
                 <h2>PURCHASED</h2>
             </div>
             <nav>
                 <ul>
-                    <li><a href="purchased.html" class="active" href="#" id="homebtn">HOME</a></li>
+                    <li>
+                        <a href="purchased.html" class="active" href="#" id="homebtn">HOME</a>
+                    </li>
+                    <li><a href="#" id="profilenavbtn">PROFILE</a></li>
                     <li><a href="#" id="guidebtn">GUIDE</a></li>
                     <li><a id="loginbtn" draggable="true">LOGIN</a></li>
                 </ul>
             </nav>
-            <div id="search">
-                <input type="text" placeholder=" Search eg: Items,Location " id="searchbox">
-            </div>
         </header>
+        <div id="search">
+            <input type="text" placeholder="Search User, search Item" id="searchbox" />
+            <input type="submit" id="submittt" value="search">
+            <ul class="searchList">
+            </ul>
+        </div>
 
-        <section>
-            <h2>Create Account</h2>
+        <!--head bar-->
+
+        <!--create aacount-->
+        <section id="section">
             <div class="account">
-                <form action="">
+                <br>
+                <h2>Create Account</h2>
+                <form action="" class="getdetails">
                     <p>Username</p>
-                    <input type="text" name="username" id="username" placeholder="Enter Username">
+                    <input type="text" name="username" id="username" placeholder="Enter Username" />
                     <p>First Name</p>
-                    <input type="text" name="firstname" id="firstname" placeholder="Enter First Name">
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter First Name" />
                     <p>Last Name</p>
-                    <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name">
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name" />
                     <p>Date of Birth</p>
-                    <input type="text" name="Date of Birth" id="DateofBirth" placeholder="dd/mm/yr">
+                    <input type="text" name="Date of Birth" id="DateofBirth" placeholder="dd/mm/yr" />
+                    <p>Sex</p>
+                    <input type="text" name="Gender" id="gender" placeholder="Enter Gender" />
                     <p>Occupation</p>
-                    <input type="text" name="occupation" id="occupation" placeholder="Enter Occupation">
+                    <input type="text" name="occupation" id="occupation" placeholder="Enter Occupation" />
                     <p>Contact</p>
-                    <input type="text" name="phonecontact" id="phonecontact" placeholder="Enter Phone Number">
+                    <input type="text" name="phonecontact" id="phonecontact" placeholder="Enter Phone Number" />
                     <p>Mail</p>
-                    <input type="text" name="mail" id="mail" placeholder="Enter Mail">
+                    <input type="text" name="mail" id="mail" placeholder="Enter Mail" />
                     <p>Provide Facebook name or instagram Handle</p>
-                    <input type="text" id="social " name="social" placeholder="Facebook,Instagram">
+                    <input type="text" id="social " name="social" placeholder="Facebook,Instagram" />
                     <p>Location</p>
-                    <input type="text" name="location" id="location" placeholder="Enter Location">
+                    <input type="text" name="location" id="location" placeholder="Enter Location" />
                     <p>About yourself</p>
                     <textarea name="about" id="about" cols="20" rows="5" maxlength="100" placeholder="About yourself"></textarea>
                     <p>Quote</p>
-                    <textarea name="about" id="about" cols="20" rows="5" maxlength="60" placeholder="Favourite business quote"></textarea>
+                    <textarea name="quote" id="quote" cols="20" rows="5" maxlength="60" placeholder="Favourite business quote"></textarea>
                     <p>Password</p>
-                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                    <input type="password" name="Vpassword" id="Vpassword" placeholder="Enter Password" />
                     <p>Verify Password</p>
-                    <input type="password" name="password" id="password" placeholder="Verify Password"><br><br>
-                    <input type="submit" value="CREATE">
+                    <input type="password" name="password" id="password" placeholder="Verify Password" /><br /><br />
+                    <input type="submit" value="CREATE" />
                 </form>
-                <br><br><br><br>
-
-
-                <div id=interest-holder>
-                    <h3>Customer Care</h3>
-                    <ul>
-                        <li>
-                            <a href="#">Contact</a><br></li>
-                        <li> <a href="#">About</a></li>
-                        </li>
-                    </ul>
-                    <form action=" ">
-                        <p>Report a problem</p>
-                        <textarea name=" " id=" " cols="20" rows="3" placeholder="We are here for you"></textarea>
-                        <p>Make a suggestion</p>
-                        <textarea name=" " id=" " cols="20" rows="3" placeholder="Suggestion Box"></textarea><br><br>
-                        <input type="submit" value="SUBMIT ">
-                    </form>
-                </div>
             </div>
+            <br /><br /><br>
+
+            <div id="interest-holder">
+                <h3>Customer Care</h3>
+                <ul>
+                    <a href="#">Contact Us</a>
+                </ul>
+                <form action="">
+                    <p>Report a problem</p>
+                    <textarea cols="20" rows="3" placeholder="We are here for you"></textarea>
+                    <p>Make a suggestion</p>
+                    <textarea cols="20" rows="3" placeholder="Suggestion Box"></textarea><br /><br />
+                    <input type="submit" value="SUBMIT " />
+                </form>
+            </div>
+
         </section>
+        <!--create aacount-->
+
+        <!--all post-->
         <div id="wrap" draggable="true">
             <div class="pos1">
+                <a href="#" class="a">purchased.com</a>
                 <div class="propicp">
-                    <a href="#"><img src="image-1.jpeg" alt="" bigpic="image-1.jpeg" id="propicc"></a>
-                    <a href="#" class="a">
-                        UsaName
-                    </a>
+                    <a href="#"></a><img src="PURCHASED.jpg" alt="" /></a>
                 </div>
-                <div class='article' data=0>
-                    <button class="btnp2" data=0>></button>
-                    <button class="btnp1" data=0>
-                        <</button>
-                    <h5 class="pricinp">N120,000</h5>
-                    <ul class="sliderp" data=0 len>
-                        <li class="slidep" data=0>
-                            <img src="image-2.jpeg" alt="">
-                        </li>
-                        <li class="slidep" data=0>
-                            <img src="image-4.jpeg" alt="">
-                        </li>
-                        <li class="slidep" data=0>
-                            <img src="summer.jpg" alt="">
-                        </li>
-                        <li class="slidep" data=0>
-                            <img src="image-3.jpeg" alt="">
-                        </li>
-                        <li class="slidep" data=0>
-                            <img src="toy.jpg" alt="">
-                        </li>
+                <div class="article">
+                    <ul class="sliderp">
+                        <img class="slidep" src="PURCHASED.jpg" alt="" />
                     </ul>
                 </div>
                 <div class="parr">
-                    <p class="par" data=0>Interested: 0</p>
+                    <p class="interested">Interested: 0</p>
                 </div>
                 <div class="describe">
-                    <h4> flowers with good and nice fragrance perfectly made by the best company</h4>
+                    <h4>Thanks for choosing Us</h4>
                 </div>
             </div>
             <div id="wrap1"></div>
         </div>
-        <div id='links'>
-            <a href='#' id="probtn" class='btn active'> Profile </a>
-            <a href='#' id="producbtn" class='btn'> Products </a>
-        </div>
+        <!--all post-->
 
+        <!--productlinks-->
+        <div id="links">
+            <a href="#" id="probtn" class="btn active"> Profile </a>
+            <a href="#" id="producbtn" class="btn"> Products </a>
+        </div>
+        <!--productlinks-->
+
+        <!--profile-->
         <div id="profile" draggable="true">
             <div id="bigpic-overlay">
-                <img src="" title="Click anywhere to close" alt="image picture" id="bigpropic">
+                <img src="" title="Click anywhere to close" alt="image picture" id="bigpropic" />
             </div>
             <div class="cover">
                 <div class="propic">
-                    <a href="#"><img src="image-1.jpeg" alt="" bigpic="image-1.jpeg" id="propicc"></a>
                 </div>
                 <div class="upld">
                     <form action="">
-                        <label for="uppropic">Upload profile picture</label><br>
-                        <input type="file" id="uppropic " accept=".jpg, .jgep, .JPEG,.PNG ,.png, image/*"><br>
-                        <input type="submit" value="post">
+                        <label for="uppropic">Upload profile picture</label><br />
+                        <input type="file" id="uppropic " accept=".jpg, .jgep, .JPEG,.PNG ,.png, image/*" /><br />
+                        <input type="submit" value="post" />
                     </form>
                 </div>
                 <div class="infofancy">
-                    <ul>
-                        <h4>dawebguru</h4>
-                        <h5>i am a strong man with a strong desire to win,i would never settle for less,i must win in every situation Godbless</h5>
-                        <h5>stay true and real to your clients</h5>
-                    </ul>
                 </div>
             </div>
             <div class="allinfo">
                 <ul class="tabs">
-                    <li> <a href='tab-1' class="activated">F.Name</a> </li>
-                    <li> <a href='tab-2'> L.Name</a></li>
-                    <li> <a href='tab-3'>D.o.B</a></li>
-                    <li> <a href='tab-4'> Location</a></li>
-                    <li> <a href='tab-5'> Occupation</a></li>
-                    <li> <a href='tab-6'> Contact</a></li>
-                    <li> <a href='tab-7'>Mail</a></li>
-                    <li><a href='tab-8'> s.media</a></li>
+                    <li><a href="tab-1" class="activated activity">F.Name</a></li>
+                    <li><a href="tab-2"> L.Name</a></li>
+                    <li><a href="tab-3">D.o.B</a></li>
+                    <li><a href="tab-4"> Location</a></li>
+                    <li><a href="tab-5"> Occupation</a></li>
+                    <li><a href="tab-6"> Contact</a></li>
+                    <li><a href="tab-7">Mail</a></li>
+                    <li><a href="tab-8"> s.media</a></li>
                 </ul>
             </div>
             <div class="content">
                 <ul class="tab-cotents">
-                    <li id="tab-1" class="visible">AYO</li>
-                    <li id="tab-2">AJETUNMOBI</li>
-                    <li id="tab-3">18/01/1997</li>
-                    <li id="tab-4">OJO LAGOS STATE NIGERIA</li>
-                    <li id="tab-5">STUDENT</li>
-                    <li id="tab-6">09093033976</li>
-                    <li id="tab-7">ayoajetunmobi78@gmail.com</li>
-                    <li id="tab-8">ayo ajetunmobi , fly.tech.graphics</li>
+
                 </ul>
             </div>
         </div>
+        <!--profile-->
+
+        <!--products-->
         <div id="products">
             <div class="upldpro">
                 <form action=" ">
-                    <label for="uppropic">Upload product</label><br>
-                    <input type="file" id="upproduc" accept=".jpg, .jgep, .JPEG,.PNG ,.png, image/* " multiple><br>
+                    <label for="uppropic">Upload product</label><br />
+                    <input type="file" id="upproduc" accept=".jpg, .jgep, .JPEG,.PNG ,.png, image/* " multiple /><br />
                     <p>Please describe product</p>
-                    <textarea name="describe" id=" " cols="17" rows="5" maxlength="60">Describe product</textarea>
+                    <textarea name="describe" id=" " cols="17" rows="5" maxlength="60">
+Describe product</textarea>
                     <p class="p">Enter price</p>
-                    <textarea name="price " id="price" cols="17" rows="5" maxlength="20">Enter price</textarea><br><br>
-                    <input type="submit" value="post" id="submit">
+                    <textarea name="price " id="price" cols="17" rows="5" maxlength="20">
+Enter price</textarea><br /><br />
+                    <input type="submit" value="post" id="submit" />
                 </form>
             </div>
             <div id="post">
-                <h3>
-                    Recent Post
-                </h3>
+                <h3>Recent Post</h3>
                 <div id="recentpost">
-                    <article data=0>
-                        <p class="dot" data=0 draggable="true">...</p>
-                        <a href="#" class="delete" data=0>Delete Post</a>
-                        <button class="btn2" data=0>></button>
-                        <button class="btn1" data=0>
-                            <</button>
-                        <h5 class="pricin">N20,000</h5>
-                        <ul class="slider" data=0 len>
-                            <li class="slide" data=0>
-                                <img src="image-2.jpeg" alt="">
-                            </li>
-                            <li class="slide" data=0>
-                                <img src="image-4.jpeg" alt="">
-                            </li>
-                            <li class="slide" data=0>
-                                <img src="summer.jpg" alt="">
-                            </li>
-                            <li class="slide" data=0>
-                                <img src="image-3.jpeg" alt="">
-                            </li>
-                            <li class="slide" data=0>
-                                <img src="toy.jpg" alt="">
-                            </li>
-                        </ul>
-                    </article>
-                    <article data=1>
-                        <p class="dot" data=1 draggable="true">...</p>
-                        <a href="#" class="delete" data=1>Delete Post</a>
-                        <button class="btn2" data=1>></button>
-                        <button class="btn1" data=1>
-                            <</button>
-                        <h5 class="pricin">N20,000</h5>
-                        <ul class="slider" data=1>
-                            <li class="slide" data=1>
-                                <img src="image-1.jpeg" alt="">
-                            </li>
-                            <li class="slide" data=1>
-                                <img src="image-5.jpeg" alt="">
-                            </li>
-                            <li class="slide" data=1>
-                                <img src="image-3.jpeg" alt="">
-                            </li>
-                        </ul>
-                    </article>
                 </div>
                 <div>
-                    <a href="#" id="view">MorePost</a>
+                    <a href="#" id="view">morePost</a>
                 </div>
             </div>
             <div id="viewpost" draggable="true">
                 <div class="close">
-                    <a href="#" id="close">close</a>
+                    <a href="#" id="close">&times;</a>
                 </div>
-                <br><br><br>
-                <article data=2>
-                    <p class="dot" data=2 draggable="true">...</p>
-                    <a href="#" class="delete" data=2>Delete Post</a>
-                    <button class="btn2" data=2>></button>
-                    <button class="btn1" data=2>
-                        <</button>
-                    <h5 class="pricin">N20,000</h5>
-                    <ul class="slider" data=2>
-                        <li class="slide" data=2>
-                            <img src="image-2.jpeg" alt="">
-                        </li>
-                        <li class="slide" data=2>
-                            <img src="image-4.jpeg" alt="">
-                        </li>
-                    </ul>
-                </article>
-                <article data=3>
-                    <p class="dot" data=3 draggable="true">...</p>
-                    <a href="#" class="delete" data=3>Delete Post</a>
-                    <button class="btn2" data=3>></button>
-                    <button class="btn1" data=3>
-                        <</button>
-                    <h5 class="pricin">N20,000</h5>
-                    <ul class="slider" data=3>
-                        <li class="slide">
-                            <img src="image-1.jpeg" alt="">
-                        </li>
-                    </ul>
-                </article>
+                <br /><br /><br />
+                <div id="forpost"></div>
             </div>
         </div>
+        <!--products-->
+
+        <!--login-->
         <div id="login">
             <div class="background">
                 <span id="X" draggable="true">&times;</span>
                 <h2>Login</h2>
                 <form action=" ">
                     <p>Username</p>
-                    <input type="text" id="user" placeholder="Enter Username ">
+                    <input type="text" id="user" placeholder="Enter Username " />
                     <p>Password</p>
-                    <input type="password" id="pass" placeholder="Enter Password"><br><br>
-                    <input type="submit" id="subbmit" value="submit">
-                </form><br>
-                <a href="#">Forgotten Password</a><br><br>
-                <a href="#">Create an account</a>
+                    <input type="password" id="pass" placeholder="Enter Password" /><br /><br />
+                    <input type="submit" id="subbmit" value="submit" />
+                </form>
+                <br />
+                <a href="#">Forgotten Password</a><br /><br />
+                <a href="#" id="createAcct">Create an account</a>
             </div>
         </div>
+        <!--login-->
     </div>
-
 </body>
-<script src="sliderpuch.js"></script>
 <script src="viewpost.js"></script>
 <script src="purchasednav.js "></script>
 <script src="profile.js"></script>

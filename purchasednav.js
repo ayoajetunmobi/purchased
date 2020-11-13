@@ -4,46 +4,70 @@ var i = 0,
     guidebtn = document.querySelector("#guidebtn"),
     X = document.querySelector("#X"),
     probtn = document.querySelector("#probtn"),
-    producbtn = document.querySelector("#producbtn");
+    producbtn = document.querySelector("#producbtn"),
+    sections = document.getElementById('section');
+let createAcct = document.getElementById("createAcct");
+let profilenavbtn = document.getElementById("profilenavbtn");
 
 homebtn.addEventListener('click', homebt);
+profilenavbtn.addEventListener('click', probt);
 guidebtn.addEventListener('click', guidebt)
 loginbtn.addEventListener('click', appear);
 X.addEventListener('click', disappear);
 probtn.addEventListener('click', proappear);
 producbtn.addEventListener('click', producappear);
+createAcct.addEventListener('click', secAppear);
 
 function homebt() {
-    loginbtn.classList.remove('active');
+    remover()
     homebtn.classList.add('active')
-    guidebtn.classList.remove('active')
+}
+
+function probt() {
+    remover()
+    profilenavbtn.classList.add('active')
 }
 
 function guidebt() {
-    loginbtn.classList.remove('active');
-    homebtn.classList.remove('active')
+    remover()
     guidebtn.classList.add('active')
 }
 
 
 function appear() {
+    remover()
     var login = document.getElementById('login');
     login.style.display = 'block';
     loginbtn.classList.add('active');
-    homebtn.classList.remove('active');
-    guidebtn.classList.remove('active');
-
 }
 
 function disappear() {
     var login = document.getElementById('login');
+    remover()
     login.style.display = 'none';
     homebtn.classList.add('active')
-    loginbtn.classList.remove('active');
-    guidebtn.classList.remove('active');
+    if (wrapone.style.display == 'none') {
+        remover()
+        profilenavbtn.classList.add('active')
+    }
+    if (sections.style.display == 'block') {
+        loginbtn.classList.add('active')
+    }
 }
 
-function proappear() {
+function secAppear() {
+    let docs = document.documentElement;
+    if (docs.offsetWidth <= 500) {
+        profile.style.display = 'none'
+        product.style.display = 'none'
+        wrapone.style.display = "none"
+        sections.style.display = "block"
+        login.style.display = 'none';
+    }
+}
+
+function proappear(event) {
+    event.preventDefault()
     var profile = document.getElementById('profile'),
         product = document.getElementById('products'),
         bigoverlay = document.getElementById("bigpic-overlay");
@@ -57,6 +81,7 @@ function proappear() {
 }
 
 function producappear() {
+    event.preventDefault()
     var profile = document.getElementById('profile'),
         product = document.getElementById('products');
 
@@ -65,4 +90,9 @@ function producappear() {
     probtn.classList.remove('active')
     producbtn.classList.add('active')
 
+}
+
+function remover() {
+    let navs = [...document.querySelectorAll("nav li a")];
+    navs.forEach(nav => nav.classList.remove('active'))
 }

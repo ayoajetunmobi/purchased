@@ -1,0 +1,14 @@
+body {
+    margin-bottom: 200%;
+}
+
+.box {
+    position: absolute;
+    top: 100px;
+    right: 50%;
+    border: thin;
+    padding: 5px;
+    width: 150px;
+    height: 100px;
+    overflow: scroll;
+}
